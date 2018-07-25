@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Tutor Registeration</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./style/thokmok.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Thok Mok</a>
+				<!-- Replace Thok Mok with thok mok image -->
+				<!--<a class="navbar-brand" href="#">
+        			<img alt="Thok Mok" src="...">
+      			</a> -->
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="tutorList.html">Tutors</a></li>
+					<li><a href="aboutUs.html">About Thok Mok</a></li>
+					<li><a href="contactUs.html">Contact Thok Mok</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thok Mok Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Thok Mok Action</a></li>
+								<li><a href="#">Thok Mok Another Action</a></li>
+								<li><a href="#">Thok Mok Doing something here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Thok Mok Separated</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Thok Mok Separated tongan tongan</a></li>
+							</ul>						
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search Tutors">
+					</div>
+					<button type="button" class="btn btn-default">Search</button>
+				</form>
+			</div><!-- navbar collapse-->
+		</div>
+	</nav>
+<div class="container">
+	<h1 class="page-header text-center">Fill in your details here</h1>
+	<div class="text-center" style="color: red">
+		<p class="lead"> * Please enter all mandatory fields</p>
+	</div>
+	<form class="form-horizontal" action="#">
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="name">Tutor's Name :  </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control"  placeholder="Tutor's Name" name="tname">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="gender">Gender :  </label>
+			<div class="col-sm-5 radio ">
+				<label class="radio-inline"><input type="radio" name="gender" value="male" >Male</label>
+				<label class="radio-inline"><input type="radio" name="gender" value="female">Female </label>
+			</div>						
+		</div>
+		<!-- date picker plug in to be included later -->
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="dob">Date of Birth :  </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Date of Birth" name="dob">
+			</div>			
+		</div>		
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="qualification">Qualificaion : </label>
+			<div class="col-sm-5">
+				<select class="custom-select-lg mb-3" size="5">
+					<option selected>Select</option>
+					<option value="phd">Phd</option>
+					<option value="master">Master</option>
+					<option value="graduate">Graduate</option>
+					<option value="12">XII Passed</option>
+					<option value="10">X Passed</option>
+				</select>
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="experience">Teaching Experience :  </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Years of Experience"name="experience">
+			</div>			
+		</div>			
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="level">Teaching Level : </label>
+			<div class="col-sm-5">
+				<select class="custom-select-lg mb-3" size="5" multiple>
+					<option selected>Select</option>
+					<option value="1-5">Class I - Class V</option>
+					<option value="6-8">Class VI -Class VIII</option>
+					<option value="9">Class IX</option>
+					<option value="10">Class X</option>
+					<option value="11">Class XI</option>
+					<option value="12">Class XII</option>
+				</select>
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="board">Board : </label>
+			<div class="col-sm-5">
+				<select class="custom-select-lg mb-3" size="5" multiple="">
+					<option selected>Select</option>
+					<option value="cbse">CBSE</option>
+					<option value="cohsem">COHSEM</option>
+					<option value="bosem">BOSEM</option>
+				</select>
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="fees">Fees Prefered : </label>
+			<div class="col-sm-5">
+				<select class="custom-select-lg mb-3" size="5">
+					<option selected>Select</option>
+					<option value="hourly">Hourly</option>
+					<option value="weekly">Weekly</option>
+					<option value="monthly">Monthly</option>
+				</select>
+			</div>			
+		</div>		
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="timing">Preferred Timings : </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Preferred Timings"name="timing">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="skill">Specialization : </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Specialization" name="specialization">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="address">Address : </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Address" name="address">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="moblie_number">Mobile No : </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Mobile Number" name="moblie_number">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="alt_number">Alternate No : </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Alternate Number" name="alt_number">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="email">Email Id : </label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" placeholder="Email Id" name="email">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="pwd">Password : </label>
+			<div class="col-sm-5">
+				<input type="password" class="form-control" placeholder="Password" name="pwd">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="confirm_pwd">Confirm Password : </label>
+			<div class="col-sm-5">
+				<input type="password" class="form-control" placeholder="Confirm Password" name="confirm_pwd">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="dp">Upload Profile Image : </label>
+			<div class=" custom-file col-sm-5">
+				<input type="file" class="custom-file-input" id="dpFile" name="dp">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="resume">Upload Resume : </label>
+			<div class="custom-file col-sm-5">
+				<input type="file" class="custom-file-input" id="resumeFile" name="resume">
+			</div>			
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label col-sm-2" for="biodata">About Yourself : </label>
+			<div class="col-sm-5">
+				<textarea  class="form-control" placeholder="About Yourself" rows="4" cols="20"></textarea><br>
+			</div>			
+		</div>
+		<div class="text-center form-group ">
+			<div class="col-sm-5">
+				<input type="checkbox" name="tick" checked>By signing up, you agree to our 
+				<a href="#" target="blank">Terms of Use</a> and 
+				<a href="#" target="blank"> Privacy Policy</a><br>
+			</div>			
+		</div>
+		<!-- button alignment to be adjust later -->
+		<button class="btn btn-primary" id="submit" type="submit">SUBMIT</button>
+	</form>	<br>
+</div>
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted text-center">Copyright © 2018 Thok Mok.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./javascripts/new.js"></script>  	
+</body>
+</html>
